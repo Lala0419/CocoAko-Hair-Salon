@@ -10,7 +10,7 @@
 
 A fully responsive, and modern website for an on trend full-service salon.
 
-**Link to project:** https://cocoandako-hair-salon.netlify.app
+**Link to project:**  [Coco & Ako Hair Salon](https://cocoandako-hair-salon.netlify.app)
 
 </div>
 
