@@ -1,0 +1,492 @@
+/* Box Model Hack */
+* {
+	box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clear {
+	clear: both;
+}
+.container {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+	font-size: 62.5%;
+}
+
+button {
+	border: none;
+	padding: 10px 20px;
+}
+a {
+	text-decoration: none;
+}
+/******************************************
+/* nav
+/*******************************************/
+
+nav * {
+	display: inline-block;
+	height: 4rem;
+}
+
+nav > ul {
+	list-style: none;
+	width: 100%;
+}
+
+nav li a {
+	text-decoration: none;
+	color: black;
+}
+
+/* .leftNav {
+	width: 15%;
+	float: left;
+	text-align: center;
+	padding: 1rem 0.75rem 0;
+} */
+
+.leftNav img {
+	height: 1.2rem;
+}
+.middleNav {
+	width: 70%;
+	float: left;
+	text-align: center;
+	padding: 1.5rem 0;
+}
+.middleNav li a {
+	/* change padding or display none for mobile size */
+	padding: 0 3rem;
+}
+
+.rightNav {
+	width: 20%;
+	float: left;
+	text-align: center;
+	padding: 1.5rem 0;
+}
+
+/****************      main     ***********/
+
+main.container {
+	clear: both;
+	background: url(../assets/colour-offer.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+main.contents {
+	color: white;
+	padding-top: 10rem;
+	padding-left: 10rem;
+}
+
+main h1 {
+	font-size: 50px;
+	/* font-weight: 100; */
+}
+main span.subtitle {
+	font-size: 1.5rem;
+	word-spacing: 2px;
+	padding: 20px 0;
+	line-height: 2rem;
+}
+main button.service {
+	background: black;
+	color: white;
+	font-weight: 300;
+	border: none;
+	margin-bottom: 30px;
+}
+
+.book a{
+	color: black;
+	width: 100%;
+	height: 100%;
+}
+
+main span,
+main button {
+	display: block;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.floating.container {
+	width: 220px;
+}
+main section.floating {
+	background: rgba(0, 0, 0, 0.756);
+	width: 20%;
+	padding: 30px 0px;
+	margin-top: 60px;
+}
+main section.floating * {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+main section.floating > * {
+	display: block;
+}
+
+.floating > span {
+	font-size: 1.5rem;
+	padding: 20px 0;
+	border-left: 4px solid white;
+	line-height: 2.5rem;
+}
+
+span.discount {
+	font-size: 2.5rem;
+}
+
+.floating h3 > * {
+	display: inline-block;
+}
+.floating h3 {
+	font-size: 1.5rem;
+	word-spacing: 1px;
+	line-height: 30px;
+}
+
+button.book {
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+section.trio {
+	/* padding: 10vh; */
+	margin: 5% 10% 5% 10%;
+	text-align: center;
+}
+section.trio > * {
+	float: left;
+	color: black;
+	/* text-align: center; */
+	width: 33%;
+}
+
+.trio img {
+	width: 3.5rem;
+	height: 3.5rem;
+}
+.trio h5 {
+	font-size: 2rem;
+	padding: 10px 0;
+}
+.trio p {
+	padding: 5px 10px;
+	letter-spacing: 2px;
+	line-height: 20px;
+	font-weight: 700;
+}
+.openHours {
+	float: right;
+	transform: rotate(90deg);
+	margin: -40rem -6rem 0 0;
+	letter-spacing: 2px;
+	color: black;
+}
+/*****************   momentum  *******************/
+.momentum.container {
+	background: rgb(242, 244, 246);
+}
+
+.momentum > * {
+	float: left;
+	width: 46%;
+}
+.momentum .momentumLeft {
+	margin: 60px 0 60px 20px;
+}
+.momentum .momentumLeft > * {
+	width: 75%;
+}
+
+.momentum .momentumLeft h2 {
+	font-size: 2rem;
+	word-spacing: 2px;
+	line-height: 25px;
+}
+.momentum p {
+	font-size: 1rem;
+	line-height: 1.8rem;
+	margin-bottom: 2rem;
+}
+.momentum .momentumLeft a {
+	text-decoration: none;
+	color: white;
+	background: black;
+	padding: 0.75rem 1.2rem;
+}
+
+.momentum .momentumRight img {
+	max-width: 100%;
+	min-width: 100%;
+	margin: 60px 10px;
+}
+
+/************* stylists **********/
+.threeLadies {
+	padding: 1rem 4rem;
+}
+.threeLadies > * {
+	display: inline-block;
+	width: 30%;
+	margin: 0.5rem;
+}
+
+.ladyInfo {
+	background: black;
+	mix-blend-mode: multiply;
+	width: 80%;
+	margin: auto;
+	margin-top: -2rem;
+	color: antiquewhite;
+}
+
+.ladyInfo > * {
+	text-align: center;
+	color: white;
+	display: block;
+}
+
+.threeLadies img {
+	width: 100%;
+}
+
+.threeLadies .name {
+	padding: 0.5rem 0;
+	font-size: 1.2rem;
+}
+
+.threeLadies .position {
+	padding-bottom: 0.5rem;
+	font-size: 8px;
+}
+
+/***************** offer ******************/
+
+.offer.container {
+	background: url(../assets/header.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.offer > * {
+	padding-left: 4rem;
+	color: white;
+}
+.offer span {
+	font-size: 2rem;
+	padding-top: 8rem;
+	display: block;
+}
+
+.offer h3 {
+	font-size: 2.5rem;
+	letter-spacing: 2px;
+	width: 50%;
+	line-height: 35px;
+	padding-top: 1rem;
+}
+
+.offer .discount {
+	font-size: 3rem;
+	display: inline;
+	font-weight: 600;
+}
+
+.offer a {
+	display: inline-block;
+	color: white;
+	background: black;
+	padding: 1rem 2rem;
+	margin: 2rem 0 8rem 4rem;
+}
+
+/*************** lookbook ***************/
+
+.lookBook h2 {
+	font-size: 3.5rem;
+	text-align: center;
+	padding: 6rem 0;
+}
+
+.lookBook img {
+	width: 95%;
+	margin: 0.7rem;
+}
+
+.lookBook .column {
+	width: 33%;
+	float: left;
+}
+
+/* ***********footer******************** */
+
+.footer {
+	clear: both;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 4rem;
+	padding-top: 2rem;
+}
+
+.footer > * {
+	text-align: center;
+}
+
+.footer a{
+	text-decoration: none;
+	color: black;
+	font-size: 2rem;
+	margin-left: 12px;
+}
+
+i {
+	border: 2px solid rgb(0, 0, 0);
+	padding: 1rem;
+	border-radius: 50%;
+	
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media all and (min-width: 400px) and (max-width: 1200px) {
+	.middleNav li a {
+		/* change padding or display none for mobile size */
+		padding: 0 0.7rem;
+	}
+}
+
+@media all and (max-width: 620px) {
+	/* .middleNav {
+		visibility: hidden;
+	} */
+	.middleNav li a {
+		padding: 5px;
+		font-size: .8rem;
+	}
+	.middleNav i {
+		visibility: visible;
+		padding: 0 1rem;
+		font-size: 1rem;
+		line-height: 0.5rem;
+	}
+
+	.middleNav {
+		width: 58%;
+	}
+
+	.rightNav{
+		width: 40%;
+		border: .5px solid black;
+	}
+
+	main span.subtitle{
+		font-size: 1rem;
+	}
+
+	main.contents {
+		padding: 2rem 0 0 1rem;
+	}
+	main.container {
+		background-size: cover;
+		background-position: -175px;
+	}
+
+	.openHours {
+		transform: rotate(0deg);
+		margin: 1rem 0 2rem 1rem;
+		display: block;
+		width: 90%;
+		float: none;
+		color: white;
+
+	}
+
+	.floating.container {
+		background-color: rgba(0, 0, 0, 0.528);
+	}
+
+	section.trio > * {
+		float: none;
+		width: 100%;
+		padding: 2rem 5rem;
+	}
+
+	.momentum > * {
+		width: 75%;
+		float: none;
+	}
+
+	.momentum .momentumLeft {
+		padding-top: 1rem;
+		margin-bottom: 3rem;
+	}
+	.momentum .momentumLeft > * {
+		width: 100%;
+	}
+
+	.momentumRight {
+		width: 100%;
+		padding-left: 10rem;
+	}
+
+	.momentum .momentumRight img {
+		width: 95%;
+		margin: 0 1rem 2rem 0;
+
+	}
+
+	.threeLadies {
+		padding: 1rem;
+	}
+	.threeLadies > * {
+		width: 100%;
+		display: block;
+		padding: 2rem;
+	}
+
+	.offer h3 {
+		font-size: 1.2rem;
+		width: 80%;	
+	}
+
+	.offer .discount {
+		display: block;
+	}
+
+	.offer span {
+		padding-top: 2rem;
+	}
+
+	.lookBook h2 {
+		font-size: 2.5rem;
+	}
+
+	.footer a {
+		font-size: 1.2rem;
+	}
+
+}

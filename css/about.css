@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+ul{
+    list-style: none;
+}
+body{
+    width: 100%;
+}
+
+.main>*{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    max-width: max-content;
+    margin-top: 10em;
+    padding: 0 5rem;
+}
+
+p{
+    font-size: 1.5rem;
+    line-height: 40px;
+    display: block;
+    font-weight: 600;
+    text-align: center;
+}
+
+.main img{
+    min-width:100%;
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+@media all and (max-width: 620px) {
+    .main>* {
+        font-size: 1rem;
+    }
+}
